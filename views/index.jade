@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  - if (message.length > 0)
+    p= message
+  p 
+    | To login click 
+    a(href="/login") here.
+  p 
+    | Sign up 
+    a(href="/signup") here.

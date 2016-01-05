@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  - if (message.length>0)
+    p= message
+  p User Id:
+  p= user._id
+  p Email:
+  p= user.local.username
+  p 
+    | Return 
+    a(href="/") home.
+  p
+    a(href="/logout") Log out. 
